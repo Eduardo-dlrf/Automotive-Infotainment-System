@@ -40,11 +40,11 @@ The Linux environment processes multimedia application streams simultaneously th
 * **Audio Subsystem Controls:** Leverages `pygame.mixer` APIs to execute dynamic tracking controls. Maps numerical inputs (`0-9`) directly to individual audio indices, maps `A`/`B` inputs to strict playback toggle blocks (Pause/Unpause), maps `C`/`D` keys to skip index functions, and loops math assignments across volume increments (`+= 0.1`) corresponding to `#` and `*` inputs.
 * **Full-Stack Web Integration:** Integrates an asynchronous REST architecture micro-service to trigger tracking commands and outputs a polished, responsive web-based visual dashboard showing active project status metadata alongside current track profiles.
 
-* ---
+---
 
 ## 🔍 Engineering Retrospective & Future Work (Post-Years Evaluation)
 
-Looking back at this platform from a post-graduate perspective, the architecture stands as a solid foundations for concurrent systems, but it reveals clear constraints when compared against production-grade automotive standards. To preserve the historical integrity of this sophomore-year milestone, **the codebase remains completely unaltered**, but the following architectural areas of opportunity have been identified for future industrial iterations:
+Looking back at this platform from a post-graduate perspective, the architecture stands as a solid foundation for concurrent systems, but it reveals clear constraints when compared against production-grade automotive standards. To preserve the historical integrity of this sophomore-year milestone, **the codebase remains completely unaltered**, but the following architectural areas of opportunity have been identified for future industrial iterations:
 
 ### 1. CPU Efficiency: Polling vs. Interrupt-Driven I/O
 * **As-Is:** `dTask1` actively scans the 4x4 matrix keypad via software polling loops under an *Above Normal* scheduling priority. Without precise blocking states, this risks CPU starvation for lower-priority tasks (like LCD rendering in `dTask4`).
