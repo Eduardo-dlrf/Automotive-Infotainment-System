@@ -1,4 +1,8 @@
 # RTOS-Based Distributed Automotive Infotainment System
+![Platform](https://img.shields.io/badge/Platform-STM32F103-blue?style=flat-square&logo=stmicroelectronics)
+![Kernel](https://img.shields.io/badge/Kernel-FreeRTOS-green?style=flat-square)
+![Languages](https://img.shields.io/badge/Languages-C%20%2F%20Python-yellow?style=flat-square)
+![Architecture](https://img.shields.io/badge/Architecture-Client--Server%20(UART)-orange?style=flat-square)
 
 An embedded, distributed client-server infotainment prototype designed to mirror the multi-threaded operation of modern automotive vehicle consoles. This project was developed during my **4th semester of Mechatronics Engineering**, focusing on software concurrency, deterministic scheduling, and systems integration over fundamental hardware components.
 
